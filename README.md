@@ -1,1 +1,1 @@
-# django-sticky-notes
+# জ‍্যাঙ্গো স্টিকি নোটস
