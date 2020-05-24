@@ -12,11 +12,14 @@ function loadData() {
             for (let i = 0; i < len; i++) {
                 let liNode = document.createElement('li');
                 let liLink = document.createElement('a');
-                
+
+                liNode.setAttribute("class", "toctree-l1");
                 liLink.setAttribute("herf", "#");
+
                 liLink.appendChild(document.createTextNode(res[i].topic));
+                liNode.appendChild(liLink);
                 
-                document.getElementById("topic").appendChild(liLink).setAttribute("class", "toctree-l1");
+                document.getElementById("topic").appendChild(liNode);
                 // console.log(i);
             }
         }
