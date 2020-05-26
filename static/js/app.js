@@ -6,7 +6,7 @@ function loadData() {
     data.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
             let res = JSON.parse(this.responseText);
-            
+
             len = res.length;
 
             for (let i = 0; i < len; i++) {
@@ -20,7 +20,7 @@ function loadData() {
 
                 liLink.appendChild(document.createTextNode(res[i].topic));
                 liNode.appendChild(liLink);
-                
+
                 document.getElementById("topic").appendChild(liNode);
                 // console.log(i);
             }
